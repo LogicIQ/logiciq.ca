@@ -1,0 +1,93 @@
+baseURL: 'https://logiciq.ca'
+languageCode: 'en-us'
+title: 'LogicIQ'
+theme: hextra
+
+enableRobotsTXT: true
+enableGitInfo: true
+enableEmoji: true
+hasCJKLanguage: true
+
+services:
+  googleAnalytics:
+    ID: G-LEHEWN0WHN
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+menu:
+  main:
+    - name: Projects
+      pageRef: /projects
+      weight: 10
+    - name: About
+      pageRef: /about
+      weight: 20
+    - name: GitHub
+      url: "https://github.com/LogicIQ"
+      weight: 30
+      params:
+        icon: github
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: logo.jpeg
+      dark: logo.jpeg
+      width: 40
+      height: 40
+
+  page:
+    # full (100%), wide (90rem), normal (1280px)
+    width: normal
+
+  theme:
+    # light | dark | system
+    default: system
+    displayToggle: true
+
+  footer:
+    displayCopyright: false
+    displayPoweredBy: false
+
+  displayUpdatedDate: true
+  dateFormat: "January 2, 2006"
+
+  # Search
+  # flexsearch is enabled by default
+  search:
+    enable: true
+    type: flexsearch
+
+    flexsearch:
+      # index page by: content | summary | heading | title
+      index: content
+      # full | forward | reverse | strict
+      # https://github.com/nextapps-de/flexsearch/#tokenizer-prefix-search
+      tokenize: forward
+
+  editPage:
+    enable: true
+    base: "https://github.com/LogicIQ/logiciq.ca/edit/main/content"
+
+  blog:
+    list:
+      displayTags: true
+      # date | lastmod | publishDate | title | weight
+      sortBy: date
+      sortOrder: desc # or "asc"
+
+  highlight:
+    copy:
+      enable: true
+      # hover | always
+      display: hover
+
+  comments:
+    enable: false
