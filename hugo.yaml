@@ -24,6 +24,15 @@ menu:
     - name: Projects
       pageRef: /projects
       weight: 10
+    - name: Secret Santa
+      pageRef: /secret-santa
+      weight: 15
+    - name: PVC Chonker
+      pageRef: /pvc-chonker
+      weight: 16
+    - name: Konductor
+      pageRef: /konductor
+      weight: 17
     - name: About
       pageRef: /about
       weight: 20

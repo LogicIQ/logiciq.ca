@@ -7,7 +7,7 @@ title: Projects
 ## PVC Chonker
 **Automatic PVC expansion based on usage thresholds**
 
-[📁 Repository](https://github.com/LogicIQ/pvc-chonker) | [📦 Helm Chart](https://github.com/LogicIQ/helm-charts/tree/main/charts/pvc-chonker)
+[📁 Repository](https://github.com/LogicIQ/pvc-chonker) | [📦 Helm Chart](https://github.com/LogicIQ/helm-charts/tree/main/charts/pvc-chonker) | [📄 Project Page](/pvc-chonker)
 
 Cloud-agnostic operator that monitors PVC usage and automatically expands them when reaching configurable thresholds. Works with any CSI-compatible storage.
 
@@ -36,7 +36,7 @@ spec:
 ## Secret Santa
 **Generate secrets with Go templates and crypto functions**
 
-[📁 Repository](https://github.com/LogicIQ/secret-santa) | [📦 Helm Chart](https://github.com/LogicIQ/helm-charts/tree/main/charts/secret-santa)
+[📁 Repository](https://github.com/LogicIQ/secret-santa) | [📦 Helm Chart](https://github.com/LogicIQ/helm-charts/tree/main/charts/secret-santa) | [📄 Project Page](/secret-santa)
 
 Kubernetes operator for generating passwords, API keys, certificates, and other sensitive data using Go templates with 100+ built-in functions.
 
@@ -63,7 +63,7 @@ spec:
 ## Konductor
 **Workflow coordination and job orchestration**
 
-[📁 Repository](https://github.com/LogicIQ/konductor) | [📦 Helm Chart](https://github.com/LogicIQ/helm-charts/tree/main/charts/konductor)
+[📁 Repository](https://github.com/LogicIQ/konductor) | [📦 Helm Chart](https://github.com/LogicIQ/helm-charts/tree/main/charts/konductor) | [📄 Project Page](/konductor)
 
 Provides barriers, gates, semaphores, and leases for coordinating complex workflows in Kubernetes. Includes CLI tool for interaction.
 
