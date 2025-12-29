@@ -8,6 +8,7 @@ hugo_stats.json
 docusaurus/.docusaurus/
 docusaurus/build/
 docusaurus/node_modules/
+docusaurus/src/
 
 # Source repos (symlinks for local dev)
 /src/

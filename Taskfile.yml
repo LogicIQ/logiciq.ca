@@ -21,8 +21,9 @@ tasks:
 
   build:
     desc: Build complete site with docs
-    deps: [build-docs, build-hugo]
     cmds:
+      - task: build-hugo
+      - task: build-docs
       - cp -r docusaurus/build/* public/
       - echo "Build complete. Docs available at:"
       - echo "- /konductor/docs/"
