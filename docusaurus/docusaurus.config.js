@@ -1,0 +1,127 @@
+const {themes} = require('prism-react-renderer');
+
+/** @type {import('@docusaurus/types').Config} */
+const config = {
+  title: 'LogicIQ Documentation',
+  tagline: 'Documentation for LogicIQ products',
+  favicon: 'img/favicon.ico',
+  url: 'https://logiciq.ca',
+  baseUrl: '/',
+  organizationName: 'LogicIQ',
+  projectName: 'logiciq-docs',
+
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
+
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+  },
+
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'konductor',
+        path: '../../konductor/docs',
+        routeBasePath: 'konductor/docs',
+        sidebarPath: require.resolve('./sidebars-konductor.js'),
+        versions: {
+          current: {
+            label: 'v0.1.0',
+            path: 'v0.1.0',
+          },
+        },
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'pvc-chonker',
+        path: '../../pvc-chonker/docs',
+        routeBasePath: 'pvc-chonker/docs',
+        sidebarPath: require.resolve('./sidebars-pvc-chonker.js'),
+        versions: {
+          current: {
+            label: 'v0.2.0',
+            path: 'v0.2.0',
+          },
+        },
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'secret-santa',
+        path: '../../secret-santa/docs',
+        routeBasePath: 'secret-santa/docs',
+        sidebarPath: require.resolve('./sidebars-secret-santa.js'),
+        versions: {
+          current: {
+            label: 'v0.2.0',
+            path: 'v0.2.0',
+          },
+        },
+      },
+    ],
+  ],
+
+  presets: [
+    [
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
+        docs: false,
+        blog: false,
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
+        },
+      }),
+    ],
+  ],
+
+  themeConfig:
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    ({
+      navbar: {
+        title: 'LogicIQ Docs',
+        logo: {
+          alt: 'LogicIQ Logo',
+          src: 'img/logo.svg',
+        },
+        items: [
+          {
+            type: 'docSidebar',
+            sidebarId: 'Getting Started',
+            docsPluginId: 'konductor',
+            position: 'left',
+            label: 'Konductor',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'Getting Started',
+            docsPluginId: 'pvc-chonker',
+            position: 'left',
+            label: 'PVC Chonker',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'Getting Started',
+            docsPluginId: 'secret-santa',
+            position: 'left',
+            label: 'Secret Santa',
+          },
+        ],
+      },
+      footer: {
+        style: 'dark',
+        copyright: `Copyright © ${new Date().getFullYear()} LogicIQ.`,
+      },
+      prism: {
+        theme: themes.github,
+        darkTheme: themes.dracula,
+      },
+    }),
+};
+
+module.exports = config;

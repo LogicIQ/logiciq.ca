@@ -1,13 +1,44 @@
 version: '3'
 
 tasks:
+  install-docs:
+    desc: Install Docusaurus dependencies
+    dir: docusaurus
+    cmds:
+      - npm install
+
+  build-docs:
+    desc: Build Docusaurus documentation
+    dir: docusaurus
+    deps: [install-docs]
+    cmds:
+      - npm run build
+
+  build-hugo:
+    desc: Build Hugo site
+    cmds:
+      - hugo --buildDrafts
+
+  build:
+    desc: Build complete site with docs
+    deps: [build-docs, build-hugo]
+    cmds:
+      - cp -r docusaurus/build/* public/
+      - echo "Build complete. Docs available at:"
+      - echo "- /konductor/docs/"
+      - echo "- /pvc-chonker/docs/"
+      - echo "- /secret-santa/docs/"
+
+  serve-docs:
+    desc: Serve Docusaurus in development
+    dir: docusaurus
+    deps: [install-docs]
+    cmds:
+      - npm run start
+
   serve:
     desc: Start Hugo development server
     cmd: hugo server --buildDrafts
-
-  build:
-    desc: Build the Hugo site
-    cmd: hugo --buildDrafts
 
   test:
     desc: Test site rendering
@@ -15,4 +46,7 @@ tasks:
 
   clean:
     desc: Clean generated files
-    cmd: rm -rf public/ resources/
+    cmds:
+      - rm -rf public/ resources/
+      - rm -rf docusaurus/build/
+      - rm -rf docusaurus/node_modules/
