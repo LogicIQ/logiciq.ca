@@ -34,6 +34,8 @@ jobs:
           submodules: recursive
       - name: Checkout docs repos
         run: |
+          mkdir -p src
+          cd src
           git clone https://github.com/LogicIQ/konductor.git
           git clone https://github.com/LogicIQ/pvc-chonker.git
           git clone https://github.com/LogicIQ/secret-santa.git

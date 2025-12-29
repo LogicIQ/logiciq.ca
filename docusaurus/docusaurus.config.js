@@ -23,7 +23,7 @@ const config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'konductor',
-        path: '../../konductor/docs',
+        path: './src/konductor/docs',
         routeBasePath: 'konductor/docs',
         sidebarPath: require.resolve('./sidebars-konductor.js'),
         versions: {
@@ -38,7 +38,7 @@ const config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'pvc-chonker',
-        path: '../../pvc-chonker/docs',
+        path: './src/pvc-chonker/docs',
         routeBasePath: 'pvc-chonker/docs',
         sidebarPath: require.resolve('./sidebars-pvc-chonker.js'),
         versions: {
@@ -53,7 +53,7 @@ const config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'secret-santa',
-        path: '../../secret-santa/docs',
+        path: './src/secret-santa/docs',
         routeBasePath: 'secret-santa/docs',
         sidebarPath: require.resolve('./sidebars-secret-santa.js'),
         versions: {

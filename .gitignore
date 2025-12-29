@@ -9,6 +9,9 @@ docusaurus/.docusaurus/
 docusaurus/build/
 docusaurus/node_modules/
 
+# Source repos (symlinks for local dev)
+/src/
+
 # OS generated files
 .DS_Store
 .DS_Store?
