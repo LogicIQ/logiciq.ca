@@ -39,6 +39,16 @@ jobs:
           git clone https://github.com/LogicIQ/konductor.git
           git clone https://github.com/LogicIQ/pvc-chonker.git
           git clone https://github.com/LogicIQ/secret-santa.git
+      - name: Verify docs structure
+        run: |
+          echo "Checking src folder structure:"
+          ls -la src/
+          echo "Checking konductor docs:"
+          ls -la src/konductor/docs/ || echo "konductor docs not found"
+          echo "Checking pvc-chonker docs:"
+          ls -la src/pvc-chonker/docs/ || echo "pvc-chonker docs not found"
+          echo "Checking secret-santa docs:"
+          ls -la src/secret-santa/docs/ || echo "secret-santa docs not found"
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
