@@ -50,9 +50,9 @@ jobs:
           echo "Checking secret-santa docs:"
           ls -la docusaurus/src/secret-santa/docs/ || echo "secret-santa docs not found"
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: '18'
+          node-version: 'lts/*'
           cache: 'npm'
           cache-dependency-path: docusaurus/package-lock.json
       - name: Setup Pages
