@@ -1,5 +1,6 @@
 ---
 title: PVC Chonker
+tags: ["kubernetes", "operator", "storage", "pvc", "automation"]
 ---
 
 ![PVC Chonker](/images/pvc-chonker.webp)

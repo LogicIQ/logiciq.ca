@@ -1,5 +1,6 @@
 ---
 title: Secret Santa
+tags: ["kubernetes", "operator", "secrets", "security", "templates"]
 ---
 
 ![Secret Santa](/images/secret-santa.webp)

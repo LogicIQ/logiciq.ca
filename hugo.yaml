@@ -55,6 +55,8 @@ menu:
         icon: github
 
 params:
+  toc:
+    displayTags: true
   navbar:
     displayTitle: true
     displayLogo: true

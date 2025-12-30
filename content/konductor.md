@@ -1,5 +1,6 @@
 ---
 title: Konductor
+tags: ["kubernetes", "operator", "workflow", "orchestration", "jobs"]
 ---
 
 ![Konductor](/images/konductor.webp)
