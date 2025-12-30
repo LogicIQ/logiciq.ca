@@ -29,8 +29,8 @@ const config = {
         sidebarPath: require.resolve('./sidebars-konductor.js'),
         versions: {
           current: {
-            label: 'v0.1.0',
-            path: 'v0.1.0',
+            label: 'v0.1.0 (Latest)',
+            path: '',
           },
         },
       },
@@ -44,8 +44,8 @@ const config = {
         sidebarPath: require.resolve('./sidebars-pvc-chonker.js'),
         versions: {
           current: {
-            label: 'v0.2.0',
-            path: 'v0.2.0',
+            label: 'v0.2.0 (Latest)',
+            path: '',
           },
         },
       },
@@ -59,8 +59,8 @@ const config = {
         sidebarPath: require.resolve('./sidebars-secret-santa.js'),
         versions: {
           current: {
-            label: 'v0.2.0',
-            path: 'v0.2.0',
+            label: 'v0.2.0 (Latest)',
+            path: '',
           },
         },
       },
