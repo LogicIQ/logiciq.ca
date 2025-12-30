@@ -87,9 +87,14 @@ const config = {
     ],
   ],
 
-  themeConfig:
+      themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
       navbar: {
         title: 'LogicIQ Docs',
         logo: {
