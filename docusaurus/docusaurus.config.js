@@ -100,20 +100,21 @@ const config = {
         logo: {
           alt: 'LogicIQ Logo',
           src: 'img/logo.jpeg',
+          href: 'https://logiciq.ca/docs/',
         },
         items: [
           {
-            to: '/',
+            href: 'https://logiciq.ca/',
             label: 'Home',
             position: 'left',
           },
           {
-            to: '/about',
+            href: 'https://logiciq.ca/about/',
             label: 'About',
             position: 'left',
           },
           {
-            to: '/projects',
+            href: 'https://logiciq.ca/projects/',
             label: 'Projects',
             position: 'left',
           },
