@@ -2,93 +2,61 @@
 title: Projects
 ---
 
-# Kubernetes Operators
+# Projects
 
-## PVC Chonker
-**Automatic PVC expansion based on usage thresholds**
+Open-source Kubernetes operators and tools built by LogicIQ.
 
-[📁 Repository](https://github.com/LogicIQ/pvc-chonker) | [📦 Helm Chart](https://github.com/LogicIQ/helm-charts/tree/main/charts/pvc-chonker) | [📄 Project Page](/pvc-chonker)
+## [Konductor](/konductor/)
 
-Cloud-agnostic operator that monitors PVC usage and automatically expands them when reaching configurable thresholds. Works with any CSI-compatible storage.
+![Konductor](/images/konductor.webp)
 
-```bash
-helm install pvc-chonker logiciq/pvc-chonker
-```
+**Kubernetes operator for workflow coordination and job orchestration.**
 
-**Example Policy:**
-```yaml
-apiVersion: pvc-chonker.io/v1alpha1
-kind: PVCPolicy
-metadata:
-  name: database-policy
-spec:
-  selector:
-    matchLabels:
-      app: database
-  thresholds:
-    capacity: 80
-  expansion:
-    increment: "10Gi"
-```
+Synchronize Kubernetes Jobs, coordinate multi-stage pipelines, and manage complex workflows in your cluster.
+
+- **Barrier** - Synchronize multiple Jobs at coordination points
+- **Gate** - Wait for dependencies before starting Jobs  
+- **Lease** - Singleton Job execution and leader election
+- **Semaphore** - Control concurrent Job execution
+
+[📖 Documentation](/docs/konductor/) | [📁 Repository](https://github.com/LogicIQ/konductor)
 
 ---
 
-## Secret Santa
-**Generate secrets with Go templates and crypto functions**
+## [PVC Chonker](/pvc-chonker/)
 
-[📁 Repository](https://github.com/LogicIQ/secret-santa) | [📦 Helm Chart](https://github.com/LogicIQ/helm-charts/tree/main/charts/secret-santa) | [📄 Project Page](/secret-santa)
+![PVC Chonker](/images/pvc-chonker.webp)
 
-Kubernetes operator for generating passwords, API keys, certificates, and other sensitive data using Go templates with 100+ built-in functions.
+**Cloud-agnostic Kubernetes operator for automatic PVC expansion.**
 
-```bash
-helm install secret-santa logiciq/secret-santa
-```
+Works with any CSI-compatible storage without external dependencies.
 
-**Example Secret:**
-```yaml
-apiVersion: secrets.secret-santa.io/v1alpha1
-kind: SecretSanta
-metadata:
-  name: db-credentials
-spec:
-  secretName: database-secret
-  template: |
-    username: admin
-    password: {{ randomPassword 16 }}
-    api-key: {{ randomString 32 }}
-```
+- **Cloud Agnostic** - Works with any CSI-compatible storage
+- **No External Dependencies** - Self-contained operation
+- **Annotation-Based** - Simple configuration through Kubernetes annotations
+- **Policy-Based** - Advanced configuration through PVCPolicy custom resources
+
+[📖 Documentation](/docs/pvc-chonker/) | [📁 Repository](https://github.com/LogicIQ/pvc-chonker)
 
 ---
 
-## Konductor
-**Workflow coordination and job orchestration**
+## [Secret Santa](/secret-santa/)
 
-[📁 Repository](https://github.com/LogicIQ/konductor) | [📦 Helm Chart](https://github.com/LogicIQ/helm-charts/tree/main/charts/konductor) | [📄 Project Page](/konductor)
+![Secret Santa](/images/secret-santa.webp)
 
-Provides barriers, gates, semaphores, and leases for coordinating complex workflows in Kubernetes. Includes CLI tool for interaction.
+**Kubernetes operator for generating secrets with templates.**
 
-```bash
-helm install konductor logiciq/konductor
-```
+Store secrets in multiple destinations with flexible template engine.
 
-**Example Barrier:**
-```yaml
-apiVersion: sync.konductor.io/v1
-kind: Barrier
-metadata:
-  name: processing-barrier
-spec:
-  parties: 3
-  timeout: "10m"
-```
+- **Multiple Storage** - Kubernetes secrets, AWS Secrets Manager, GCP Secret Manager
+- **Template Engine** - Go templates with crypto, random, and TLS generators
+- **Create-Once** - Secrets generated once and never modified
+- **Cloud Integration** - AWS and GCP authentication support
+
+[📖 Documentation](/docs/secret-santa/) | [📁 Repository](https://github.com/LogicIQ/secret-santa)
 
 ---
 
-## Installation
+## Contributing
 
-All operators are available via Helm:
-
-```bash
-helm repo add logiciq https://logiciq.github.io/helm-charts
-helm repo update
-```
+All projects are open-source and welcome contributions. Check out our [GitHub organization](https://github.com/LogicIQ) to get started.
