@@ -20,11 +20,20 @@ const config = {
 
   plugins: [
     [
+      '@docusaurus/plugin-sitemap',
+      {
+        changefreq: 'weekly',
+        priority: 0.5,
+        ignorePatterns: ['/tags/**'],
+        filename: 'sitemap.xml',
+      },
+    ],
+    [
       '@docusaurus/plugin-content-docs',
       {
         id: 'konductor',
         path: './src/konductor/docs',
-        routeBasePath: 'konductor/docs',
+        routeBasePath: 'docs/konductor',
         sidebarPath: require.resolve('./sidebars-konductor.js'),
         versions: {
           current: {
@@ -39,7 +48,7 @@ const config = {
       {
         id: 'pvc-chonker',
         path: './src/pvc-chonker/docs',
-        routeBasePath: 'pvc-chonker/docs',
+        routeBasePath: 'docs/pvc-chonker',
         sidebarPath: require.resolve('./sidebars-pvc-chonker.js'),
         versions: {
           current: {
@@ -54,7 +63,7 @@ const config = {
       {
         id: 'secret-santa',
         path: './src/secret-santa/docs',
-        routeBasePath: 'secret-santa/docs',
+        routeBasePath: 'docs/secret-santa',
         sidebarPath: require.resolve('./sidebars-secret-santa.js'),
         versions: {
           current: {
@@ -87,9 +96,24 @@ const config = {
         title: 'LogicIQ Docs',
         logo: {
           alt: 'LogicIQ Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.jpeg',
         },
         items: [
+          {
+            to: '/',
+            label: 'Home',
+            position: 'left',
+          },
+          {
+            to: '/about',
+            label: 'About',
+            position: 'left',
+          },
+          {
+            to: '/projects',
+            label: 'Projects',
+            position: 'left',
+          },
           {
             type: 'docSidebar',
             sidebarId: 'Getting Started',
@@ -110,6 +134,11 @@ const config = {
             docsPluginId: 'secret-santa',
             position: 'left',
             label: 'Secret Santa',
+          },
+          {
+            href: 'https://github.com/LogicIQ',
+            label: 'GitHub',
+            position: 'right',
           },
         ],
       },

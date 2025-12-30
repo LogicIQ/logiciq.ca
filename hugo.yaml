@@ -8,6 +8,12 @@ enableGitInfo: true
 enableEmoji: true
 hasCJKLanguage: true
 
+# Sitemap configuration
+sitemap:
+  changefreq: 'weekly'
+  priority: 0.5
+  filename: 'sitemap.xml'
+
 services:
   googleAnalytics:
     ID: G-LEHEWN0WHN
@@ -71,7 +77,7 @@ params:
     displayCopyright: false
     displayPoweredBy: false
 
-  displayUpdatedDate: true
+  displayUpdatedDate: false
   dateFormat: "January 2, 2006"
 
   # Search

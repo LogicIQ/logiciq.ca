@@ -68,7 +68,7 @@ spec:
 
 ## Documentation
 
-- [📖 Complete Documentation](/secret-santa/docs/) - Versioned documentation with examples
+- [📖 Complete Documentation](/docs/secret-santa/) - Versioned documentation with examples
 - [📖 README](https://github.com/LogicIQ/secret-santa/blob/main/README.md) - Complete documentation and examples
 - [🗺️ ROADMAP](https://github.com/LogicIQ/secret-santa/blob/main/ROADMAP.md) - Development roadmap and planned features
 

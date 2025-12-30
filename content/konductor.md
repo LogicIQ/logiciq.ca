@@ -128,7 +128,7 @@ spec:
 
 ## Documentation
 
-- [📖 Complete Documentation](/konductor/docs/) - Versioned documentation with examples
+- [📖 Complete Documentation](/docs/konductor/) - Versioned documentation with examples
 - [📖 README](https://github.com/LogicIQ/konductor/blob/main/README.md) - Complete documentation and examples
 - [🗺️ ROADMAP](https://github.com/LogicIQ/konductor/blob/main/docs/ROADMAP.md) - Development roadmap and planned features
 - [🔧 SDK Documentation](https://github.com/LogicIQ/konductor/blob/main/docs/SDK.md) - Go SDK integration guide

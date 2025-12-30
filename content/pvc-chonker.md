@@ -74,7 +74,7 @@ spec:
 
 ## Documentation
 
-- [📖 Complete Documentation](/pvc-chonker/docs/) - Versioned documentation with examples
+- [📖 Complete Documentation](/docs/pvc-chonker/) - Versioned documentation with examples
 - [📖 README](https://github.com/LogicIQ/pvc-chonker/blob/main/README.md) - Complete documentation and examples
 - [🗺️ ROADMAP](https://github.com/LogicIQ/pvc-chonker/blob/main/docs/ROADMAP.md) - Development roadmap and planned features
 
