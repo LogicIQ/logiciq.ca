@@ -7,11 +7,12 @@ const config = {
   favicon: 'img/favicon.ico',
   url: 'https://logiciq.ca',
   baseUrl: '/',
+  trailingSlash: true,
   organizationName: 'LogicIQ',
   projectName: 'logiciq-docs',
 
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenMarkdownLinks: 'ignore',
 
   i18n: {
     defaultLocale: 'en',
@@ -73,6 +74,12 @@ const config = {
       ({
         docs: false,
         blog: false,
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'docs/sitemap.xml',
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },

@@ -25,21 +25,6 @@ tasks:
       - task: build-hugo
       - task: build-docs
       - cp -r docusaurus/build/* public/
-      - echo "Generating combined sitemap index..."
-      - |
-        cat > public/sitemap-index.xml << 'EOF'
-        <?xml version="1.0" encoding="UTF-8"?>
-        <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-          <sitemap>
-            <loc>https://logiciq.ca/sitemap.xml</loc>
-            <lastmod>$(date -u +"%Y-%m-%dT%H:%M:%SZ")</lastmod>
-          </sitemap>
-          <sitemap>
-            <loc>https://logiciq.ca/docs/sitemap.xml</loc>
-            <lastmod>$(date -u +"%Y-%m-%dT%H:%M:%SZ")</lastmod>
-          </sitemap>
-        </sitemapindex>
-        EOF
       - echo "Build complete. Docs available at:"
       - echo "- /docs/konductor/"
       - echo "- /docs/pvc-chonker/"
@@ -47,7 +32,6 @@ tasks:
       - echo "Sitemaps available at:"
       - echo "- /sitemap.xml (Hugo main site)"
       - echo "- /docs/sitemap.xml (Docusaurus docs)"
-      - echo "- /sitemap-index.xml (Combined index)"
 
   serve-docs:
     desc: Serve Docusaurus in development
