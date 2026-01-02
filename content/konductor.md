@@ -14,6 +14,7 @@ Kubernetes operator for workflow coordination and job orchestration. Synchronize
 - **Barrier** - Synchronize multiple Jobs at coordination points
 - **Gate** - Wait for dependencies before starting Jobs
 - **Lease** - Singleton Job execution and leader election
+- **Mutex** - Mutual exclusion for critical sections
 - **Semaphore** - Control concurrent Job execution
 - **CLI** - Command-line tool for workflow management
 - **SDK** - Go SDK for programmatic integration
@@ -113,6 +114,18 @@ metadata:
   name: daily-report
 spec:
   ttl: 1h
+```
+
+### Mutex
+Mutual exclusion for critical sections.
+
+```yaml
+apiVersion: konductor.io/v1
+kind: Mutex
+metadata:
+  name: database-migration
+spec:
+  ttl: 30m
 ```
 
 ### Semaphore
