@@ -15,6 +15,8 @@ Kubernetes operator for workflow coordination and job orchestration. Synchronize
 - **Gate** - Wait for dependencies before starting Jobs
 - **Lease** - Singleton Job execution and leader election
 - **Mutex** - Mutual exclusion for critical sections
+- **RWMutex** - Read-write locks for concurrent readers or exclusive writers
+- **Once** - Ensure actions execute exactly once across multiple pods
 - **Semaphore** - Control concurrent Job execution
 - **CLI** - Command-line tool for workflow management
 - **SDK** - Go SDK for programmatic integration
@@ -126,6 +128,30 @@ metadata:
   name: database-migration
 spec:
   ttl: 30m
+```
+
+### RWMutex
+Read-write locks allowing multiple concurrent readers or exclusive writers.
+
+```yaml
+apiVersion: konductor.io/v1
+kind: RWMutex
+metadata:
+  name: cache-lock
+spec:
+  ttl: 5m
+```
+
+### Once
+Ensure actions execute exactly once across multiple pods.
+
+```yaml
+apiVersion: konductor.io/v1
+kind: Once
+metadata:
+  name: app-init
+spec:
+  ttl: 1h
 ```
 
 ### Semaphore
