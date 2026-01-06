@@ -17,6 +17,7 @@ Kubernetes operator for workflow coordination and job orchestration. Synchronize
 - **Mutex** - Mutual exclusion for critical sections
 - **RWMutex** - Read-write locks for concurrent readers or exclusive writers
 - **Once** - Ensure actions execute exactly once across multiple pods
+- **WaitGroup** - Coordinate dynamic number of workers
 - **Semaphore** - Control concurrent Job execution
 - **CLI** - Command-line tool for workflow management
 - **SDK** - Go SDK for programmatic integration
@@ -150,6 +151,18 @@ apiVersion: konductor.io/v1
 kind: Once
 metadata:
   name: app-init
+spec:
+  ttl: 1h
+```
+
+### WaitGroup
+Coordinate dynamic number of workers.
+
+```yaml
+apiVersion: konductor.io/v1
+kind: WaitGroup
+metadata:
+  name: worker-group
 spec:
   ttl: 1h
 ```
