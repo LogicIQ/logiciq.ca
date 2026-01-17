@@ -8,9 +8,9 @@ LogicIQ builds cloud-native Kubernetes operators that solve real infrastructure 
 
 ## Projects
 
-- **[pvc-chonker PVC autoscaler](https://github.com/LogicIQ/pvc-chonker)**: Automatic PVC expansion
-- **[secret-santa](https://github.com/LogicIQ/secret-santa)**: Secret generation
-- **[konductor](https://github.com/LogicIQ/konductor)**: Workflow coordination
+- **[pvc-chonker PVC autoscaler](/pvc-chonker/)**: Automatic PVC expansion
+- **[secret-santa](/secret-santa/)**: Secret generation
+- **[konductor](/konductor/)**: Workflow coordination
 
 All projects are open source.
 
