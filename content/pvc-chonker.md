@@ -1,15 +1,15 @@
 ---
-title: PVC Chonker
+title: PVC Chonker - PVC autoscaler / automatic PVC expansion 
 tags: ["kubernetes", "operator", "storage", "pvc", "automation"]
 ---
 
 ![PVC Chonker](/images/pvc-chonker.webp)
 
-# PVC Chonker
+# PVC Chonker - PVC autoscaler / automatic PVC expansion
 
 A cloud-agnostic Kubernetes operator for automatic PVC expansion. Works with any CSI-compatible storage without external dependencies.
 
-## Features
+## Why choose pvc-chonker as your Kubernetes PVC Autoscaler?
 
 - **Cloud Agnostic**: Works with any CSI-compatible storage
 - **No External Dependencies**: Self-contained operation without external databases
@@ -17,6 +17,17 @@ A cloud-agnostic Kubernetes operator for automatic PVC expansion. Works with any
 - **Policy-Based**: Advanced configuration through PVCPolicy custom resources
 - **Cooldown Protection**: Prevents rapid successive expansions
 - **Inode Support**: Monitors both storage and inode usage
+
+## PVC Autoscaler Comparison
+
+| Feature                          | pvc-chonker          | gardener/pvc-autoscaler | topolvm/pvc-autoresizer | DevOps-Nirvana Volume Autoscaler |
+|----------------------------------|----------------------|---------------------------|--------------------------|----------------------------------|
+| Cloud agnostic                   | Yes                  | No (Gardener focused)     | Yes                      | Yes                              |
+| Group / batch operations         | Yes (PVCGroup)       | No                        | No                       | No                               |
+| Inode pressure monitoring        | Yes                  | No                        | No                       | No                               |
+| Flexible policy inheritance      | Yes (PVCPolicy)      | Limited                   | Limited                  | No                               |
+| Prometheus dependency            | Optional             | Yes                       | Yes                      | Yes                              |
+| Cooldown & safety features       | Advanced             | Basic                     | Basic                    | Basic                            |
 
 ## Installation
 
