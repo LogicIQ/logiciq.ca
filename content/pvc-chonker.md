@@ -92,7 +92,7 @@ spec:
 Yes — it's a fully-featured, production-ready **Kubernetes PVC autoscaler** with many unique capabilities...
 
 ### How does it compare to other PVC autoscalers?
-(link to comparison table)
+[(Tools comparison table)](https://logiciq.ca/pvc-chonker/)
 
 ## Documentation 
 
