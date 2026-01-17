@@ -5,7 +5,7 @@ tags: ["kubernetes", "operator", "storage", "pvc", "automation", "pvc-autoscaler
 
 ![PVC Chonker](/images/pvc-chonker.webp)
 
-# PVC Chonker - PVC autoscaler / automatic PVC expansion
+
 
 A cloud-agnostic Kubernetes operator for automatic PVC expansion. Works with any CSI-compatible storage without external dependencies.
 
