@@ -1,6 +1,6 @@
 ---
 title: PVC Chonker - PVC autoscaler / automatic PVC expansion 
-tags: ["kubernetes", "operator", "storage", "pvc", "automation"]
+tags: ["kubernetes", "operator", "storage", "pvc", "automation", "pvc-autoscaler", "expansion", "volume-expansion", "persistent volume claim", "csi"]
 ---
 
 ![PVC Chonker](/images/pvc-chonker.webp)
@@ -8,6 +8,8 @@ tags: ["kubernetes", "operator", "storage", "pvc", "automation"]
 # PVC Chonker - PVC autoscaler / automatic PVC expansion
 
 A cloud-agnostic Kubernetes operator for automatic PVC expansion. Works with any CSI-compatible storage without external dependencies.
+
+Kubernetes PVC autoscaler / auto-resize operator • group operations • flexible policies • inode monitoring • cloud-agnostic CSI volume expansion
 
 ## Why choose pvc-chonker as your Kubernetes PVC Autoscaler?
 
@@ -84,7 +86,15 @@ spec:
     cooldown: "30m"
 ```
 
-## Documentation
+## FAQ
+
+### Is pvc-chonker a PVC autoscaler?
+Yes — it's a fully-featured, production-ready **Kubernetes PVC autoscaler** with many unique capabilities...
+
+### How does it compare to other PVC autoscalers?
+(link to comparison table)
+
+## Documentation 
 
 - [📖 Complete Documentation](/docs/pvc-chonker/) - Versioned documentation with examples
 - [📖 README](https://github.com/LogicIQ/pvc-chonker/blob/main/README.md) - Complete documentation and examples
