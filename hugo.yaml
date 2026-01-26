@@ -29,7 +29,10 @@ menu:
   main:
     - name: About
       pageRef: /about
-      weight: 5
+      weight: 5    
+    - name: Support
+      pageRef: https://helpdesk.logiciq.ca/
+      weight: 7  
     - name: Projects
       pageRef: /projects
       weight: 10
@@ -55,8 +58,8 @@ params:
     displayTitle: true
     displayLogo: true
     logo:
-      path: logo.jpeg
-      dark: logo.jpeg
+      path: logo.png
+      dark: logo.png
       width: 40
       height: 40
 
