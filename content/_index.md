@@ -12,6 +12,14 @@ LogicIQ builds cloud-native Kubernetes operators that solve real infrastructure 
 - **[secret-santa](/secret-santa/)**: Secret generation
 - **[konductor](/konductor/)**: Workflow coordination
 
-All projects are open source.
+All our [projects](/projects) are open source.
 
-[View Projects](/projects)
+## Business and Enterprise Support
+
+Need production-grade reliability? We offer paid support plans for all our tools and operators.
+Visit our [helpdesk portal](https://helpdesk.logiciq.ca/) to discover plans and SLAs
+
+
+
+
+
