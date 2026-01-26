@@ -31,7 +31,7 @@ menu:
       pageRef: /about
       weight: 5    
     - name: Support
-      pageRef: https://helpdesk.logiciq.ca/
+      pageRef: /support
       weight: 7  
     - name: Projects
       pageRef: /projects
