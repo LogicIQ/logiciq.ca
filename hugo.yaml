@@ -30,9 +30,9 @@ menu:
     - name: About
       pageRef: /about
       weight: 5    
-    - name: Support
-      pageRef: /support
-      weight: 7  
+    #- name: Support
+    #  pageRef: /support
+    #  weight: 7  
     - name: Projects
       pageRef: /projects
       weight: 10
