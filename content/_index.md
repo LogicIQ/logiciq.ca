@@ -14,12 +14,6 @@ LogicIQ builds cloud-native Kubernetes operators that solve real infrastructure 
 
 All our [projects](/projects) are open source.
 
-## Business and Enterprise Support
-
-While our tools are open-source and community-backed, your production environment shouldn’t rely on “best effort” assistance. LogicIQ Paid Support provides the safety net your DevOps and SRE teams need to scale with confidence.
-
-Visit our [helpdesk portal](https://helpdesk.logiciq.ca/) to discover plans and SLAs
-
 
 
 
