@@ -1,10 +1,10 @@
 ---
-title: LogicIQ
+title: LogicIQ - Infrastructure Intelligence for Kubernetes
 ---
 
 # LogicIQ
 
-LogicIQ builds cloud-native Kubernetes operators that solve real infrastructure challenges.
+LogicIQ builds  щpen-source operators that solve real-world DevOps challenges. Minimal footprint, maximum reliability.
 
 ## Projects
 
@@ -15,6 +15,17 @@ LogicIQ builds cloud-native Kubernetes operators that solve real infrastructure 
 All our [projects](/projects) are open source.
 
 
+## Why LogicIQ?
+- Solving Real Infrastructure Gaps
+We build purpose-driven Kubernetes operators that tackle the specific pain points of modern cloud-native environments, from storage exhaustion to workflow orchestration.
 
+- Performance-Engineered
+Built with Go and following the latest Operator SDK patterns, our tools ensure zero-overhead performance with a minimal footprint in your clusters.
+
+- Reliability at Scale
+LogicIQ tools like PVC Chonker are designed to prevent production incidents before they happen, automating manual tasks so your team can focus on what matters.
+
+- Transparent & Open Source
+Community-driven at our core. All our projects are open source, allowing for full transparency, security auditing, and contribution from the global engineering community.
 
 
