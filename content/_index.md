@@ -1,6 +1,7 @@
 ---
 title: LogicIQ - Infrastructure Intelligence for Kubernetes
-desciption: Open-source Kubernetes operators for automated infrastructure. Scale PVCs with PVC Chonker, coordinate workflows with Konductor, and manage secrets effortlessly.
+description: Open-source Kubernetes operators for automated infrastructure. Scale PVCs with PVC Chonker, coordinate workflows with Konductor, and manage secrets effortlessly.
+type: hextra-home
 ---
 
 LogicIQ builds open-source operators that solve real-world DevOps challenges. Minimal footprint, maximum reliability.
