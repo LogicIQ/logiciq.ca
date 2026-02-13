@@ -4,7 +4,7 @@ title: LogicIQ - Infrastructure Intelligence for Kubernetes
 
 # LogicIQ
 
-LogicIQ builds  щpen-source operators that solve real-world DevOps challenges. Minimal footprint, maximum reliability.
+LogicIQ builds open-source operators that solve real-world DevOps challenges. Minimal footprint, maximum reliability.
 
 ## Projects
 
