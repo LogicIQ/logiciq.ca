@@ -59,7 +59,7 @@ const config = {
         sidebarPath: require.resolve('./sidebars-secret-santa.js'),
         versions: {
           current: {
-            label: 'v0.2.0 (Latest)',
+            label: 'v0.4.0 (Latest)',
             path: '',
           },
         },
